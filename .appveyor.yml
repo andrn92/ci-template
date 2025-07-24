@@ -1,3 +1,5 @@
+image: Ubuntu2404
+
 environment:
   nodejs_version: "22"
 
