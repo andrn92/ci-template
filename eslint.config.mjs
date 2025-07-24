@@ -4,8 +4,10 @@ import js from "@eslint/js"
 export default [
 js.configs.recommended,
 {
+  ignores: ["node_modules/**", "dist/**", "build/**", "coverage/**", "docs/**"]
+},
+{
   files: ["**/*.{js,mjs,cjs}"],
-  ignores: ["node_modules/**", "dist/**", "build/**", "coverage/**", "docs/**"],
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -18,7 +20,6 @@ js.configs.recommended,
   rules: {
     "strict": ["error", "global"],
     "no-unused-vars": "error",
-    "no-console": "warn",
     "curly": "error",
     "no-var": "error",
     "eol-last": ["error", "always"],
