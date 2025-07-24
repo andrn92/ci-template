@@ -1,4 +1,4 @@
-image: Ubuntu22045
+image: Ubuntu2204
 
 environment:
   nodejs_version: "22"
